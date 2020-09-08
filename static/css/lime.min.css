@@ -808,9 +808,9 @@ a:active,a:focus,a:hover {
 	display:block;
 	overflow:hidden
 }
-.lime-sidebar .lime-sidebar-inner ul li ul.sub-menu li a.active {
+/* .lime-sidebar .lime-sidebar-inner ul li ul.sub-menu li a.active {
 	color:rgba(27,29,93,1)
-}
+} */
 .lime-sidebar .lime-sidebar-inner ul li.active-page>a {
 	color:#037afb
 }

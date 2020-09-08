@@ -8,7 +8,7 @@
               <div class="card-body">
                 <div class="dashboard-info row">
                   <div class="info-text col-md-6">
-                    <h5 class="card-title animated tada">Welcome back Anna!</h5>
+                    <h5 class="card-title">Welcome back Anna!</h5>
                     <p>Get familiar with dashboard, here are some ways to get started.</p>
                     <ul>
                       <li>Check some stats for your website bellow</li>
