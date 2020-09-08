@@ -1,4 +1,4 @@
-# demo1
+# blog_model for vue
 
 > A Vue.js project
 
