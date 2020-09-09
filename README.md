@@ -3,6 +3,11 @@
 > A Vue.js project
 
 ## Build Setup
+·这是用的一个lime的模板，我把它改成vue了。
+·一开始英文的界面还不错，换成中文之后字体没有对齐，
+·我觉得要是改的话，可能会花费大量时间
+·我有点小强迫
+·就暂时这样好了
 
 ``` bash
 # install dependencies

@@ -6,17 +6,17 @@
           <li class="sidebar-title">Apps</li>
           <li>
             <router-link to="/dashboard" active-class="active">
-              <i class="material-icons">dashboard</i>Dashboard
+              <i class="material-icons">dashboard</i>仪表盘
             </router-link>
           </li>
           <li>
             <router-link to="/profile" active-class="active">
-              <i class="material-icons">person_outline</i>Profile
+              <i class="material-icons">person_outline</i>个人配置
             </router-link>
           </li>
           <li>
             <router-link to="/mailBox" active-class="active">
-              <i class="material-icons">inbox</i>Mailbox
+              <i class="material-icons">inbox</i>邮箱
             </router-link>
           </li>
           <li>
@@ -26,19 +26,16 @@
           </li>
           <li>
             <router-link to="/fileManager" active-class="active">
-              <i class="material-icons">cloud_queue</i>File Manager
+              <i class="material-icons">cloud_queue</i>文件管理
             </router-link>
           </li>
-          <li class="sidebar-title">UI Elements</li>
-          <li :class="{'open':this.$route.path.indexOf('style')!=-1}">
+          <li class="sidebar-title">UI 元素</li>
+          <li :class="{'open':this.$route.path.indexOf('style_')!=-1}">
             <a href="#">
-              <i class="material-icons">text_format</i>Styles
+              <i class="material-icons">text_format</i>样式
               <i class="material-icons has-sub-menu">keyboard_arrow_left</i>
             </a>
-            <ul
-              class="sub-menu"
-              :style="{'display':this.$route.path.indexOf('style') != -1?'block':'none'}"
-            >
+            <ul  class="sub-menu" :style="{'display':this.$route.path.indexOf('style_') != -1?'block':'none'}">
               <li>
                 <router-link to="/style_typography" active-class="active">Typography</router-link>
               </li>
@@ -53,17 +50,17 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li :class="{'open':this.$route.path.indexOf('ui_')!=-1}">
             <a href>
-              <i class="material-icons">apps</i>Components
+              <i class="material-icons">apps</i>组件
               <i class="material-icons has-sub-menu">keyboard_arrow_left</i>
             </a>
-            <ul class="sub-menu">
+            <ul class="sub-menu" :style="{'display':this.$route.path.indexOf('ui_') != -1?'block':'none'}">
               <li>
-                <a href="ui-alerts.html">Alerts</a>
+                <router-link to="/ui_alert" active-class="active">通告</router-link>
               </li>
               <li>
-                <a href="ui-badge.html">Badge</a>
+               <router-link to="/ui_badge" active-class="active">Badge</router-link>
               </li>
               <li>
                 <a href="ui-breadcrumb.html">Breadcrumb</a>

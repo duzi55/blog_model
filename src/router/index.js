@@ -11,6 +11,8 @@ import Typography from '../pages/stylePages/Typography.vue'
 import Code from '../pages/stylePages/Code.vue'
 import Table from '../pages/stylePages/Table.vue'
 import Icon from '../pages/stylePages/Icon.vue'
+import Alert from '../pages/UIPages/Alert.vue'
+import Badge from '../pages/UIPages/Badge.vue'
 
 Vue.use(Router)
 
@@ -68,6 +70,16 @@ export default new Router({
           path: '/style_icon',
           name: 'icon',
           component: Icon
+        },
+        {
+          path: '/ui_alert',
+          name: 'alert',
+          component: Alert
+        },
+        {
+          path: '/ui_badge',
+          name: 'badge',
+          component: Badge
         },
       ]
     },
