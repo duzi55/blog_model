@@ -29,24 +29,27 @@
               <i class="material-icons">cloud_queue</i>File Manager
             </router-link>
           </li>
-          <li class="sidebar-title" :class="{'active':styleIsActive}">UI Elements</li>
-          <li>
+          <li class="sidebar-title">UI Elements</li>
+          <li :class="{'open':this.$route.path.indexOf('style')!=-1}">
             <a href="#">
               <i class="material-icons">text_format</i>Styles
               <i class="material-icons has-sub-menu">keyboard_arrow_left</i>
             </a>
-            <ul class="sub-menu">
+            <ul
+              class="sub-menu"
+              :style="{'display':this.$route.path.indexOf('style') != -1?'block':'none'}"
+            >
               <li>
-                <router-link to="/style/typography" active-class="active">Typography</router-link>
+                <router-link to="/style_typography" active-class="active">Typography</router-link>
               </li>
               <li>
-                <a href="styles-code.html">Code</a>
+                <router-link to="/style_code" active-class="active">Code</router-link>
               </li>
               <li>
-                <a href="styles-tables.html">Tables</a>
+                <router-link to="/style_table" active-class="active">Tables</router-link>
               </li>
               <li>
-                <a href="styles-icons.html">Icons</a>
+                <router-link to="/style_icon" active-class="active">Icons</router-link>
               </li>
             </ul>
           </li>
@@ -208,16 +211,6 @@ export default {
     };
   },
   methods: {},
-  watch: {
-    $route(to, from) {
-      var path = to.path;
-      if (path.indexOf("style") != -1) {
-        this.styleIsActive = true;
-      } else {
-        this.styleIsActive = false;
-      }
-    },
-  },
 };
 </script>
 

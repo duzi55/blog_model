@@ -8,6 +8,9 @@ import MailBox from '../pages/MailBox.vue'
 import Todo from '../pages/Todo.vue'
 import FileManager from '../pages/FileManager.vue'
 import Typography from '../pages/stylePages/Typography.vue'
+import Code from '../pages/stylePages/Code.vue'
+import Table from '../pages/stylePages/Table.vue'
+import Icon from '../pages/stylePages/Icon.vue'
 
 Vue.use(Router)
 
@@ -47,9 +50,24 @@ export default new Router({
           component: FileManager,
         },
         {
-          path: '/style/typography',
+          path: '/style_typography',
           name: 'typography',
           component: Typography
+        },
+        {
+          path: '/style_code',
+          name: 'code',
+          component: Code
+        },
+        {
+          path: '/style_table',
+          name: 'table',
+          component: Table
+        },
+        {
+          path: '/style_icon',
+          name: 'icon',
+          component: Icon
         },
       ]
     },
